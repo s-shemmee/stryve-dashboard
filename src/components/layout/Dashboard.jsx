@@ -4,7 +4,7 @@ import Hero from '../Sections/Hero';
 
 const Dashboard = () => {
   return (
-    <div className="relative w-full min-h-screen bg-slate-100">
+    <div className="relative w-full min-h-screen bg-transparent">
       <div className="fixed top-0 left-0 right-0 z-30 w-full">
         <Navbar />
       </div>

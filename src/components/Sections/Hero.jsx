@@ -2,10 +2,10 @@ import { Activity, Calendar, ChevronDown, Sparkle } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center w-full overflow-hidden bg-slate-100">
+    <section className="relative flex flex-col items-center justify-center w-full overflow-hidden">
       {/* Hero Content */}
       <div className="relative z-10 w-full px-4 py-8">
-        <div className="max-w-[1100px] mx-auto flex flex-col space-y-4 w-full">
+        <div className="max-w-[1100px] mx-auto flex flex-col space-y-4 w-full z-10">
           {/* Breadcrumbs and Actions */}
           <div className="flex items-center justify-between w-full">
             <nav className="text-sm font-medium text-gray-800">
@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
 
           {/* Scan Info */}
-          <div className="flex flex-wrap items-center justify-center gap-10 text-base font-medium text-center text-gray-700">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-base font-medium text-center text-gray-700">
             <span className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-50">
               <Activity className="w-5 h-5 text-teal-600" />
               Scan Type: <span className="font-semibold text-gray-900">Web</span>
@@ -115,7 +115,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Additional rows will go here */}
+          {/*  */}
         </div>
       </div>
     </section>
