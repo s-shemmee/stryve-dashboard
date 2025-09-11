@@ -1,7 +1,13 @@
-import Dashboard from './pages/Dashboard';
+import BackgroundShapes from './components/BackgroundShapes';
+import Dashboard from './components/layout/Dashboard';
 
 function App() {
-  return <Dashboard />;
+  return (
+    <>
+      <BackgroundShapes />
+      <Dashboard />
+    </>
+  );
 }
 
 export default App;

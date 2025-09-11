@@ -2,18 +2,10 @@ import { Activity, Calendar, ChevronDown, Sparkle } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden bg-slate-100">
-      {/* Decorative Shapes */}
-      <div className="">
-        <div className="absolute top-0 left-0 w-48 bg-teal-900 h-96 shape-tl"></div>
-        <div className="absolute bottom-0 left-0 w-48 h-96 bg-amber-400 shape-bl"></div>
-        <div className="absolute bottom-0 right-0 w-48 bg-teal-200 h-96 shape-br"></div>
-        <div className="absolute top-0 right-0 w-48 bg-pink-500 h-96 shape-tr"></div>
-      </div>
-
+    <section className="relative flex flex-col items-center justify-center w-full overflow-hidden bg-slate-100">
       {/* Hero Content */}
-      <div className="relative z-10 w-full px-4">
-        <div className="max-w-[1100px] mx-auto flex flex-col space-y-6 w-full">
+      <div className="relative z-10 w-full px-4 py-8">
+        <div className="max-w-[1100px] mx-auto flex flex-col space-y-4 w-full">
           {/* Breadcrumbs and Actions */}
           <div className="flex items-center justify-between w-full">
             <nav className="text-sm font-medium text-gray-800">
@@ -123,6 +115,7 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Additional rows will go here */}
         </div>
       </div>
     </section>

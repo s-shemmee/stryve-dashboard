@@ -1,6 +1,6 @@
-import Navbar from '../components/Layout/Navbar';
-import SideNavbar from '../components/layout/SideNavbar';
-import Hero from '../components/Sections/Hero';
+import Navbar from '../Navbar';
+import SideNavbar from '../SideNavbar';
+import Hero from '../Sections/Hero';
 
 const Dashboard = () => {
   return (
