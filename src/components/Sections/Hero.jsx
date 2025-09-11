@@ -1,4 +1,5 @@
 import { Activity, Calendar, ChevronDown, Sparkle } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -115,7 +116,67 @@ const Hero = () => {
             </div>
           </div>
 
-          {/*  */}
+          {/* Issues Overview */}
+          <div className="flex flex-wrap items-stretch justify-center w-full gap-12 mt-8">
+            <div className="flex flex-col items-center w-40">
+              <span className="mb-2 text-lg font-semibold text-gray-800">Total Issues</span>
+              <div className="relative w-16 h-16 mb-2">
+                <svg className="w-16 h-16" viewBox="0 0 36 36">
+                  <circle cx="18" cy="18" r="16" fill="none" stroke="#14b8a6" strokeWidth="4" />
+                </svg>
+                <div className="absolute inset-0 flex items-center justify-center text-lg font-bold text-teal-700">22</div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center w-64">
+              <span className="mb-4 text-lg font-semibold text-gray-800">Issues by Priority</span>
+              <div className="flex items-end justify-center w-full h-24 gap-6 pt-2">
+                <div className="flex flex-col items-center">
+                  <span className="mb-2 text-base font-bold text-teal-700">10</span>
+                  <div className="h-20 transition-all bg-teal-700 rounded w-7"></div>
+                  <span className="mt-2 text-xs text-gray-700">Critical</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="mb-2 text-base font-bold text-teal-200">8</span>
+                  <div className="h-16 transition-all bg-teal-200 rounded w-7"></div>
+                  <span className="mt-2 text-xs text-gray-700">High</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="mb-2 text-base font-bold text-teal-400">6</span>
+                  <div className="h-12 transition-all bg-teal-400 rounded w-7"></div>
+                  <span className="mt-2 text-xs text-gray-700">Medium</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="mb-2 text-base font-bold text-teal-500">4</span>
+                  <div className="h-8 transition-all bg-teal-500 rounded w-7"></div>
+                  <span className="mt-2 text-xs text-gray-700">Low</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid w-full max-w-xl grid-cols-2 gap-6">
+              <div className="flex items-center min-w-0 px-4 py-3 bg-white border border-black rounded-lg shadow-sm">
+                <AlertCircle className="flex-shrink-0 w-5 h-5 mr-2 text-red-500" />
+                <span className="mr-2 text-base font-semibold text-black whitespace-nowrap">Critical Issues</span>
+                <span className="ml-auto text-lg font-bold text-black">5</span>
+              </div>
+              <div className="flex items-center min-w-0 px-4 py-3 bg-white border border-black rounded-lg shadow-sm">
+                <AlertCircle className="flex-shrink-0 w-5 h-5 mr-2 text-orange-400" />
+                <span className="mr-2 text-base font-semibold text-black whitespace-nowrap">High Issues</span>
+                <span className="ml-auto text-lg font-bold text-black">8</span>
+              </div>
+              <div className="flex items-center min-w-0 px-4 py-3 bg-white border border-black rounded-lg shadow-sm">
+                <AlertCircle className="flex-shrink-0 w-5 h-5 mr-2 text-yellow-400" />
+                <span className="mr-2 text-base font-semibold text-black whitespace-nowrap">Medium Issues</span>
+                <span className="ml-auto text-lg font-bold text-black">6</span>
+              </div>
+              <div className="flex items-center min-w-0 px-4 py-3 bg-white border border-black rounded-lg shadow-sm">
+                <AlertCircle className="flex-shrink-0 w-5 h-5 mr-2 text-green-500" />
+                <span className="mr-2 text-base font-semibold text-black whitespace-nowrap">Low Issues</span>
+                <span className="ml-auto text-lg font-bold text-black">3</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
