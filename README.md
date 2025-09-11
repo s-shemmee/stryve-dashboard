@@ -1,12 +1,57 @@
-# React + Vite
+# Stryve Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates converting a Figma dashboard design into a React application using Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Single-page dashboard layout
+- Custom decorative background shapes
+- Sticky top navigation bar and vertical sidebar
+- Hero section with breadcrumbs, scan info, tabs, and more
+- Tailwind CSS utility classes for styling
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+- Lucide React (for icons)
+
+## Getting Started
+
+1. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser:**
+
+   Visit [http://localhost:5173](http://localhost:5173) to view the dashboard.
+
+## Project Structure
+
+```txt
+src/
+  components/
+    BackgroundShapes.jsx
+    Layout/
+      Navbar.jsx
+      SideNavbar.jsx
+    Sections/
+      Hero.jsx
+  App.jsx
+  main.jsx
+```
+
+## Notes
+
+- The design and layout closely follow the provided Figma mockup.
+- Responsiveness is a work in progress and not fully implemented yet.
+- The code is organized for clarity and maintainability, with reusable components and Tailwind utility classes.
