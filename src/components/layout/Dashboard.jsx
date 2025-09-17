@@ -4,15 +4,19 @@ import Hero from '../Sections/Hero';
 
 const Dashboard = () => {
   return (
-    <div className="relative w-full min-h-screen bg-transparent">
-      <div className="fixed top-0 left-0 right-0 z-30 w-full">
+    <div className="flex flex-col w-full min-h-screen bg-transparent">
+      {/* Top Navbar */}
+      <nav className="w-full">
         <Navbar />
-      </div>
-      <div className="fixed left-0 top-16 h-[calc(100vh-4rem)] z-20">
-        <SideNavbar />
-      </div>
-      <div className="pt-16 pl-16">
-        <Hero />
+      </nav>
+      {/* Main content area: sidebar + hero */}
+      <div className="flex flex-1 w-full">
+        <aside className="flex-shrink-0">
+          <SideNavbar />
+        </aside>
+        <main className="flex-1">
+          <Hero />
+        </main>
       </div>
     </div>
   );
