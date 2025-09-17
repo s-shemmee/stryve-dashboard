@@ -2,6 +2,8 @@
 
 This project demonstrates converting a Figma dashboard design into a React application using Tailwind CSS for styling.
 
+![preview](https://github.com/s-shemmee/stryve-dashboard/blob/main/public/Capture.JPG)
+
 ## Features
 
 - Single-page dashboard layout
